@@ -21,6 +21,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision "shell", inline: "apt-get update && apt-get -y install gimp"
     config.vm.provision "shell", inline: "apt-get -y install xpdf"
+    config.vm.provision "shell", path: "bootstrap.sh"
   end
 
 end
