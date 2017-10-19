@@ -18,9 +18,9 @@ pip install --upgrade pip
 pip install requests
 pip install PyDSTool
 if ! [ -L /var/www ]; then
-  rm -rf /var/www
-  ln -fs /vagrant /var/www
-  if [ ! -d /var/www/html ]; then
-     mkdir /var/www/html
-  fi
+	rm -rf /var/www
+	ln -fs /vagrant /var/www
+	if [ ! -d /var/www/html ]; then
+		mkdir /var/www/html
+	fi
 fi
